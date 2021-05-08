@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoNor - Linking Georgia and Norway</titl></title>
+    <style>
+        body {background-color:#C5CAE9;
+        }
+        h1 {text-align: center;
+        color:#242366;  }
+
+
+        h2 {text-align: center;
+        color: hsl(241, 49%, 27%); }
+
+img {display: block;
+margin: 0 auto;
+  }
+
+h3 {font-size: 20px;
+color:#242366 ;  
+display: block;
+margin: 0 auto;
+border: #376FB9 2px solid;
+max-width: 60%;
+padding: 20px;
+font-weight: lighter;}
+
+
+button {display: block;
+margin: 0 auto;
+background-color: #FFFFFF;
+color: #376FB9;
+font-weight: bold;
+font-size: larger;
+padding: 15px 20px;
+border-radius: 4px;
+border: 2px solid #376FB9;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover{
+opacity: 0.9;
+cursor: pointer;
+color: #A93739;
+background-color: #78B0D6;
+font-weight: bold;
+transition: all 100ms ease-in-out;
+}
+
+.linkOne {display: block;
+font-size: larger;
+font-weight: bold;
+color: #282262;
+text-decoration: none;
+text-align: center;
+}
+
+.linkOne:hover {
+    color: #376FB9;
+    text-decoration: underline;
+}
+
+.linkTwo {display: block;
+font-size: large;
+font-weight: bold;
+color: #A1292C;
+text-decoration: none;
+text-align: center;
+}
+
+.linkTwo:hover{
+    color:#376FB9;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p {line-height: 1.5;
+text-align: center;
+margin: auto;
+color:#242366 ;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 60px;
+}
+
+.additional {font-style: italic;
+}
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+ <h1>GeoNor - linking Georgia and Norway</h1>   
+ <h2>GeoNor - კავშირი საქართველოსა და ნორვეგიას შორის</h2>
+ <img src="https://scontent.fosl4-2.fna.fbcdn.net/v/t31.0-8/1614450_1440639889504400_144040588_o.jpg?_nc_cat=110&ccb=3&_nc_sid=174925&_nc_ohc=zywYSyOS1i4AX-fh6ZC&_nc_ht=scontent.fosl4-2.fna&oh=6c7b5ab0d025fbbba649f0dbb9eb1dc1&oe=605902A0" width="200">
+<br>
+ <h3>
+     GeoNor – Linking Georgia & Norway is a non-governmental and non-profit organization. The aim is to encourage links
+between Georgia and Norway through educational, social and cultural activities. 
+<span class="additional">GeoNor supports civil society
+development processes in Georgia and considers experience sharing as significant aspects for development</span> 
+ </h3>
+<br>
+<button>
+    Apply for membership
+</button>
+<br>
+<br>
+<a href=https://www.facebook.com/Geo-Nor-The-Link-Between-Georgia-Norway-1440633929504996" target="-blank"; class="linkOne">GeoNor on Facebook</a>
+<a href="https://www.linkedin.com/company/geonor-the-link-between-georgia-and-norway/?viewAsMember=true" target="-blank"; class="linkTwo">@GeoNor - the link between Georgia and Norway</a>
+<hr>
+    <p class="buttom text">All rights reserved 2021</p> 
+    </div>
+    <script>
+        function membership(params) {
+                let question = prompt("Would you like to apply for our free membership?")
+                question = question.toLowerCase ();
+                if (question === "yes") {
+                    let firstName = prompt("What is your first name?");
+                    let secondName = prompt ("What is your second name?")
+                    let email = prompt("What is your e-mail?");
+                    alert("Thank you" + "," + "" + firstName + "!" +  " " + "You will get an e-mail from us soon☀");
+                    let h1 = document.querySelector("h1");
+                    h1.innerHTML = "Welcome to GeoNor" + "," + " " + firstName + "!"
+                } else {
+                    alert("You are welcome to get back to us later!");
+                }
+        }
+
+        let membershipButton = document.querySelector ("button");
+        membershipButton.addEventListener("click",membership);
+        
+    </script>
+</body>
+</html>
